@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
-import { QuoteDetailsComponent } from './quote-detail/quote-detail.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 
@@ -29,7 +29,7 @@ import { VoteComponent } from './vote/vote.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    QuoteDetailsComponent
+    QuoteDetailComponent
   ],
 
   providers: [],

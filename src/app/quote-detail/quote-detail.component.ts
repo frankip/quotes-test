@@ -3,10 +3,10 @@ import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote-details',
-  templateUrl: './quote-detail.component.html',
+  templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
-export class QuoteDetailsComponent implements OnInit {
+export class QuoteDetailComponent implements OnInit {
   
   @Input() quote: Quote | any;
   @Output() isRead = new EventEmitter<boolean>();
