@@ -1,1 +1,9 @@
-<p>quote-detail works!</p>
+<p>{{quote.description}} </p>
+<button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete<i class="fa fa-trash" aria-hidden="true"></i>
+</button>
+<hr>
+
+
+<button (click)="likebuttonclick(quote)" class="btn btn-success"> like</button><span> {{quote.like}}</span>
+<hr>
+<button (click)="dislikebuttonclick(quote)" class="btn btn-dark"> dislike</button><span> {{quote.dislike}}</span>
