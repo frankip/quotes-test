@@ -9,6 +9,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { VoteComponent } from './vote/vote.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { StrikethroughDirective } from './strikethrough.directive';
     QuoteFormComponent,
     HighlightDirective,
     StrikethroughDirective,
+    VoteComponent,
 
 
 
