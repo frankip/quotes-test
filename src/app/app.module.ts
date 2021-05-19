@@ -10,6 +10,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 import { StrikethroughDirective } from './strikethrough.directive';
 import { VoteComponent } from './vote/vote.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { VoteComponent } from './vote/vote.component';
 
     StrikethroughDirective,
     VoteComponent,
+    HighlightDirective,
 
   ],
 
