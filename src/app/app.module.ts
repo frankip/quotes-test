@@ -8,6 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HighlightDirective } from './highlight.directive';
     DateCountPipe,
     QuoteFormComponent,
     HighlightDirective,
+    StrikethroughDirective,
 
 
 
