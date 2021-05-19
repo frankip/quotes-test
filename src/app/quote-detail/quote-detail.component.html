@@ -1,9 +1,6 @@
-<p>{{quote.description}} </p>
-<button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete<i class="fa fa-trash" aria-hidden="true"></i>
-</button>
-<hr>
-
-
-<button (click)="likebuttonclick(quote)" class="btn btn-success"> like</button><span> {{quote.like}}</span>
-<hr>
-<button (click)="dislikebuttonclick(quote)" class="btn btn-dark"> dislike</button><span> {{quote.dislike}}</span>
+<button class="btn btn-sm btn-success" (click)='upvote()'>{{quote.likes}} <i class="fa fa-thumbs-up"
+    id="like">likes</i></button>
+<button class="btn btn-sm hate" id="hate" (click)='downvote()'>{{quote.dislikes}} <i class="fa fa-thumbs-down"
+    id="dislike">dislikes</i></button>
+<button class="btn btn-sm btn-danger" id="del" (click)='quoteDelete(true)'><i class="fa fa-trash" id="delete">delete
+    quote</i></button>

@@ -1,32 +1,30 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Quote } from '../quote'
+import { Quote } from '../quote';
+
 @Component({
-  selector: 'app-quote-detail',
+  selector: 'app-quote-details',
   templateUrl: './quote-detail.component.html',
-  styleUrls: ['./quote-detail.component.css']
+  styleUrls: ['./quote-details.component.css']
 })
-export class QuoteDetailComponent implements OnInit {
+export class QuoteDetailsComponent implements OnInit {
+  
+  @Input() quote: Quote | any;
+  @Output() isRead = new EventEmitter<boolean>();
 
-  @Input() quote: Quote | undefined;
-  @Output() isComplete: EventEmitter<boolean> = new EventEmitter();
-  @Output() upVote: EventEmitter<Quote> = new EventEmitter();
-  @Output() downVote: EventEmitter<Quote> = new EventEmitter();
-  quoteDelete(complete: boolean) {
-    this.isComplete.emit(complete);
+
+  quoteDelete(read: boolean) {
+    this.isRead.emit(read);
+  }
+  upvote() {
+    this.quote.likes += 1;
+  }
+  downvote() {
+    this.quote.dislikes += 1;
   }
 
-  // numberofdislikes : number=0
-
-  likebuttonclick(quote: Quote | undefined) {
-    this.upVote.emit(quote);
-
-  }
-  dislikebuttonclick(quote: Quote | undefined) {
-    this.downVote.emit(quote)
-  }
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

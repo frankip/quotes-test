@@ -22,7 +22,7 @@ export class QuoteComponent implements OnInit {
     this.quote.push(quote)
   }
 
-  toggleDetail(index: string | number) {
+  toggleDetail(index:any  )  {
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
 

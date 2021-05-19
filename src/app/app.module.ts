@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
-import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { QuoteDetailsComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { HighlightDirective } from './highlight.directive';
+
 import { StrikethroughDirective } from './strikethrough.directive';
 import { VoteComponent } from './vote/vote.component';
 
@@ -16,21 +16,20 @@ import { VoteComponent } from './vote/vote.component';
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteDetailComponent,
+    
     DateCountPipe,
     QuoteFormComponent,
-    HighlightDirective,
+
     StrikethroughDirective,
     VoteComponent,
-
-
 
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    QuoteDetailsComponent
   ],
 
   providers: [],
