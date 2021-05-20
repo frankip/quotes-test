@@ -17,7 +17,7 @@ import { HighlightDirective } from './highlight.directive';
   declarations: [
     AppComponent,
     QuoteComponent,
-    
+    QuoteDetailComponent,
     DateCountPipe,
     QuoteFormComponent,
 
@@ -31,7 +31,7 @@ import { HighlightDirective } from './highlight.directive';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    QuoteDetailComponent
+    
   ],
 
   providers: [],

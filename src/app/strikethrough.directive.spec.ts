@@ -2,7 +2,7 @@
 
 // describe('StrikethroughDirective', () => {
 //   it('should create an instance', () => {
-//     const directive = new StrikethroughDirective();
+//     const directive = new StrikethroughDirective() ;
 //     expect(directive).toBeTruthy();
 //   });
 // });
